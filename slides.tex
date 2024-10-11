@@ -1,0 +1,123 @@
+\documentclass[10pt]{beamer}
+\usetheme{Frankfurt}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+% Title page settings
+\title{Introduction to Remote Sensing}
+\subtitle{Applications in Disaster Management}
+\author{Manuel Arturo Suárez Améndola}
+\date{\today}
+
+\begin{document}
+
+% Title slide
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Table of Contents
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+% Section 1: Introduction
+\section{Introduction to Remote Sensing and Machine Learning}
+\begin{frame}{Introduction}
+    \begin{itemize}
+        \item Remote sensing uses satellites to monitor the Earth.
+        \item Machine learning (ML) and deep learning (DL) help automate the analysis of remote sensing data.
+        \item Importance in disaster management: fast, accurate, and scalable response systems.
+    \end{itemize}
+\end{frame}
+
+% Section 2: Machine Learning Techniques
+\section{Machine Learning Techniques in Disaster Management}
+\begin{frame}{Machine Learning Techniques}
+    \begin{itemize}
+        \item \textbf{Support Vector Machines (SVMs)}: Used for classifying flooded regions or landslide areas.
+        \item \textbf{Random Forest (RF)}: Detects wildfire risk zones by analyzing land cover changes.
+        \item \textbf{K-Nearest Neighbors (KNN)}: Identifies disaster-affected areas by comparing with historical data.
+    \end{itemize}
+    \vspace{5mm}
+    \textbf{Applications}: Flood detection, wildfire prediction, earthquake damage assessment.
+\end{frame}
+
+% Section 3: Deep Learning Techniques
+\section{Deep Learning Techniques in Disaster Management}
+\begin{frame}{Deep Learning Techniques}
+    \begin{itemize}
+        \item \textbf{Convolutional Neural Networks (CNNs)}: Used for image segmentation to detect floods, landslides, or damaged buildings.
+        \item \textbf{Recurrent Neural Networks (RNNs)}: Time-series analysis for wildfire spread or flood progression.
+        \item \textbf{Generative Adversarial Networks (GANs)}: Enhancing satellite imagery quality, disaster simulation.
+    \end{itemize}
+\end{frame}
+
+% Section 4: SAR Texture and Polarimetric Analysis
+\section{SAR Characteristics and Analysis}
+\subsection{SAR Texture Analysis}
+\begin{frame}{Texture in SAR Images}
+    \begin{itemize}
+        \item Texture refers to spatial patterns in pixel intensity.
+        \item Common texture features: Contrast, Entropy, Homogeneity, Energy.
+        \item \textbf{Applications}: 
+        \begin{itemize}
+            \item Flood detection (smooth texture in water regions).
+            \item Landslide and urban damage detection.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\subsection{Polarimetric SAR Analysis}
+\begin{frame}{Polarimetric SAR (PolSAR) Analysis}
+    \begin{itemize}
+        \item Polarimetric SAR captures data in multiple polarization states (HH, HV, VV, VH).
+        \item **Scattering mechanisms**: Surface, double-bounce, and volume scattering.
+        \item \textbf{Decomposition Techniques}:
+        \begin{itemize}
+            \item \textbf{Cloude-Pottier Decomposition}
+            \item \textbf{Freeman-Durden Decomposition}
+            \item \textbf{H/A/ Decomposition}
+        \end{itemize}
+        \item \textbf{Applications}:
+        \begin{itemize}
+            \item Flood mapping: PolSAR identifies flooded areas by distinguishing surface scattering.
+            \item Oil spill detection: Differentiates oil-covered water from clean water.
+            \item Earthquake damage: Monitors building collapse via double-bounce scattering.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% Section 5: Case Studies
+\section{Case Studies}
+\begin{frame}{Case Studies of ML/DL in Disaster Response}
+    \begin{itemize}
+        \item \textbf{Hurricane Damage Assessment}: CNNs used to detect flood extent post-Hurricane Harvey.
+        \item \textbf{Nepal Earthquake}: SAR and CNNs used to detect landslides.
+        \item \textbf{California Wildfires}: RF models for predicting fire-prone areas and DL for burn severity mapping.
+    \end{itemize}
+\end{frame}
+
+% Section 6: Conclusion
+\section{Conclusion}
+\begin{frame}{Conclusion}
+    \begin{itemize}
+        \item Machine learning and deep learning are transforming disaster management through fast and accurate satellite image analysis.
+        \item SAR texture and polarimetric analysis provide detailed surface information for disasters like floods, oil spills, and earthquakes.
+        \item The integration of AI and remote sensing will enhance real-time disaster detection and response capabilities.
+    \end{itemize}
+\end{frame}
+
+% References slide
+\section{References}
+\begin{frame}{References}
+    \begin{itemize}
+        \item \url{https://disasterscharter.org/}
+        \item Sentinel-1 and Sentinel-2 data examples from \url{https://www.copernicus.eu/}
+        \item PRISMA hyperspectral satellite data from \url{https://www.asi.it/en/activity/earth-observation/prisma/}
+    \end{itemize}
+\end{frame}
+
+\end{document}
+
